@@ -1,0 +1,63 @@
+html{
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body{
+    margin: 0px;
+}
+
+.container{
+    font-size: 500%;
+    text-align: center;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    border-style: outset;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    margin: 20px;
+}
+
+.finished{
+    width: 920px;
+    position: absolute;
+    left: 1000px;
+}
+
+.finished .item{
+    border: 5px solid green;
+}
+
+.finished .title{
+    background-color: green;
+}
+.preparing, .finished{
+    height: 1080px;
+}
+
+.preparing{
+    width: 1000px;
+    position: absolute;
+    left: 0px;
+}
+
+.preparing .item{
+    border: 5px solid orange;
+}
+
+.preparing .title{
+    background-color: orange;
+}
+
+.title{
+    color: white;
+    padding: 5px;
+}
